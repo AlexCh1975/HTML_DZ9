@@ -24,23 +24,19 @@ body{
     font-family: Gilroy;
 }
 
-.center{
-    padding-left: calc(50% - 596px);
-    padding-right: calc(50% - 596px);
-}
-
 .header{
     background: #FFFFFF;
-    display: flex;
+    display: grid;
     gap: 30px;
+    grid-template-columns: repeat(3, 370px);
     justify-content: center;
     padding: 100px 0;
 }
 
 .header__item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: start;
     max-width: 310px;
     padding: 40px 31px 25px 29px;
 }
@@ -127,13 +123,13 @@ body{
 .content__info{
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 370px);
 }
 
 .info__item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
     background: #FFFFFF;
     padding-bottom: 50px;
     max-width: 370px;
